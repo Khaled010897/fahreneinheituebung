@@ -1,11 +1,13 @@
 package at.fhtw.fahreinheitUebung.dto;
 
 public class Fahreinheit {
-    private double convert = 0;
+    private double zahl = 0;
 
-    public double getConvert() {return convert;}
+    public double getConvert() {return zahl;}
 
-    public void fahreinheitberechnen(double zahl) { convert = ((zahl - 32) * 5/9); }
+    public static double fahreinheitberechnen(double zahl) { zahl = ((zahl - 32) * 5/9);
+        return zahl;
+    }
 
 }
 
